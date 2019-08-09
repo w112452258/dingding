@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/transaction/main",
+    "pages/settle/main",
+    "pages/shop/main",
+    "pages/commodity/main",
+    "pages/order/main",
+    "pages/promotion/main",
+    "pages/announcement/main",
+    "pages/vip/main",
+    "pages/production/main",
+    "pages/sub-pages/transactions/details/main",
+    "pages/sub-pages/orders/evaluation/main",
+    "pages/sub-pages/commoditys/addCommoditys/main"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3399ff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000000"
+  }
+}
