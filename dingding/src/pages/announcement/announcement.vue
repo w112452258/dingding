@@ -7,7 +7,7 @@
                 <p class="p-time">{{ a.time }}</p>
             </div>
         </div>
-        <p class="add-announcement">添加公告</p>
+        <p class="add-announcement" @click="addAnnouncement">添加公告</p>
     </div>
   </div>
 </template>
@@ -100,6 +100,12 @@ export default {
       logs = mpvue.getStorageSync('logs') || []
     }
     this.logs = logs.map(log => formatTime(new Date(log)))
+  },
+
+  methods: {
+      addAnnouncement() {
+        wx.navigateTo({url: './../sub-pages/announcements/addAnnouncement/main'})
+      },
   }
 }
 </script>

@@ -3,9 +3,9 @@
     <div class="content">
       <div class="addCommoditys">
         <div class="my-container">
-          <div class="item">
+          <div class="item" @click="showModifyTitle">
             <p class="p-title">商品名称</p>
-            <p class="p-content" @click="showModifyTitle">{{ name }}</p>
+            <p class="p-content">{{ name }}</p>
           </div>
 
           <div class="item">
@@ -41,9 +41,9 @@
             </picker>
           </div>
 
-          <div class="item">
+          <div class="item" @click="showModifyDesc">
             <p class="p-title">商品描述</p>
-            <p class="p-content" @click="showModifyDesc">{{ desc }}</p>
+            <p class="p-content">{{ desc }}</p>
           </div>
 
           <p class="add-commodity" @click="commodity">添加商品</p>

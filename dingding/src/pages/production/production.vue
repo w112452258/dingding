@@ -5,12 +5,12 @@
             <div class="my-container">
                 <img class="img-production" src="">
 
-                <p class="p-ticket">{{ p.ticket}}</p>
+                <p class="p-ticket">{{ p.ticket }}</p>
                 <p class="p-time">有效期：{{ p.time1 }} 至 {{ p.time2 }}</p>
 
             </div>
         </div>
-        <p class="add-production">卡券制作</p>
+        <p class="add-production" @click="addProduction">卡券制作</p>
     </div>
   </div>
 </template>
@@ -18,9 +18,6 @@
 <script>
 import { formatTime } from '@/utils/index'
 import card from '@/components/card'
-import { 
-    like_icon
-  } from './../../assets/icon'
 
 
 export default {
@@ -63,6 +60,12 @@ export default {
       logs = mpvue.getStorageSync('logs') || []
     }
     this.logs = logs.map(log => formatTime(new Date(log)))
+  },
+
+  methods: {
+      addProduction() {
+        wx.navigateTo({url: './../sub-pages/productions/addProduction/main'})
+      },
   }
 }
 </script>

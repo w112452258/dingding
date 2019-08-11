@@ -12,7 +12,9 @@
     "pages/production/main",
     "pages/sub-pages/transactions/details/main",
     "pages/sub-pages/orders/evaluation/main",
-    "pages/sub-pages/commoditys/addCommoditys/main"
+    "pages/sub-pages/commoditys/addCommoditys/main",
+    "pages/sub-pages/announcements/addAnnouncement/main",
+    "pages/sub-pages/productions/addProduction/main"
   ],
 
   "window": {
