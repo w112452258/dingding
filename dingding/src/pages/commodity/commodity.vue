@@ -130,8 +130,8 @@ export default {
 
   methods: {
       commodity() {
-      wx.navigateTo({url: './../sub-pages/commoditys/addCommoditys/main'})
-    },
+        wx.navigateTo({url: './../sub-pages/commoditys/addCommoditys/main'})
+      },
   }
 }
 </script>
